@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador Alura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>
+          <a href="https://www.aluracursos.com/" target="_blank"
+            ><img src="/img/logo.svg" alt="Logo de alura"
+          /></a>
+        </h1>
+      </header>
+      <section>
+        <article class="textoEncriptado">
+          <textarea
+            name=""
+            class="encriptado"
+            placeholder="Ingrese el texto aqui"
+          ></textarea>
+        </article>
+        <article class="articleBoton">
+          <div class="divBoton">
+            <h5>
+              <img src="/img/alerta.svg" alt="alerta" />
+              <span>Solo letras minúsculas y sin acentos</span>
+            </h5>
+            <div class="divGrupoBoton">
+              <button onclick="codificador()" id="encriptar">Encriptar</button>
+              <button onclick="desencriptar()" id="desencriptar">
+                Desencriptar
+              </button>
+            </div>
+          </div>
+        </article>
+      </section>
+      <aside>
+        <article class="articleEscondido" style="display: none">
+          <div class="divTextoEscondido">
+            <textarea
+             class="textoEscondido"
+             name="" id="textoAside"
+             disabled 
+             >aaaaa</textarea>
+          </div>
+          <div class="divCopy">
+            <button onclick="copiar()" class="copy">Copy</button>
+          </div>
+        </article>
+        <article class="articleMostrado" style="display: flex">
+          <div class="divMunieco">
+            <img
+              src="./img/muñeco.svg"
+              alt="Chica mirando un diamante con una lupa"
+            />
+          </div>
+          <div class="divGrupoTexto">
+            <h2>Ningún mensaje fue encontrado</h2>
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+          </div>
+        </article>
+      </aside>
+    </main>
+    <footer>
+      <a href="https://github.com/FernandoEscuderoDev" target="_blank">
+        <h5>&copy;Fernando</h5>
+        <img src="/img/icons8-github.svg" alt="" />
+        <h5>Escudero</h5>
+      </a>
+    </footer>
+  </body>
+  <script src="/js/main.js"></script>
+</html>
