@@ -36,7 +36,7 @@ function codificador() {
     }
     return letra;
   });
-  palabrasCodificada = palabrasCodificada.toString().replaceAll(",", "");
+  palabrasCodificada = palabrasCodificada.join("");
   return mostrarResultado(palabrasCodificada);
 }
 
